@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-color: rgb(160, 227, 229);
+    
+}
+
+.first-section {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-left: 1%;
+    margin-right: 1%;
+    gap: 2%;
+    margin-top: 3rem;
+}
+
+.red-block {
+    background-color: red;
+    width: 68%;
+    height: 30vh;
+}
+
+.red-block2 {
+    background-color: red;
+    width: 28%;
+    height: 30vh;
+}
+
+.second-section {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1.5rem;
+    gap: 2%;
+}
+
+.yellow-block {
+    background-color: rgb(253, 207, 0);
+    width: 40%;
+    height: 70vh;
+}
+
+.purple-blocks {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    width: 56%;
+}
+
+.purple-block, .purple-block2 {
+    height: 34vh;
+    width: 100%;
+    background-color: rgb(138, 2, 138);
+}
+
+.third-section {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-left: 1%;
+    margin-right: 1%;
+    gap: 2%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.blue-block, .blue-block3 {
+    width: 28.5%;
+    background-color: rgb(13, 172, 158);
+    height: 20vh;
+}
+
+.blue-block2 {
+    width: 37%;
+    background-color:  rgb(13, 172, 158);
+    height: 20vh;
+}
