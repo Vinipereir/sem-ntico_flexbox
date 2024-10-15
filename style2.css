@@ -1,0 +1,157 @@
+:root {
+    --title-color: rgb(0, 0, 0);
+    --background-color: white;
+    --header-color: rgb(238, 85, 85);
+    --aside-left-color: rgb(230, 201, 75);
+    --aside-right-color: rgb(96, 223, 85);
+    --footer-color: rgb(62, 152, 226);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: monospace;
+   
+}
+
+header {
+    width: 100%;
+    background-color: var(--header-color);
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: var(--title-color);
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hf-title {
+    color: var(--title-color);
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center {
+    width: 60%;
+    background-color: var(--background-color);
+    height: 80vh;
+}
+
+aside {
+    width: 25%;
+    height: 80vh;
+}
+
+.left {
+    background-color: var(--aside-left-color);
+    height: 80vh;
+}
+
+.right {
+    background-color: var(--aside-right-color);
+    height: 80vh;
+}
+
+.site-footer {
+    width: 100%;
+    background-color: var(--footer-color);
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (min-width: 760px) and (max-width: 1023px) {
+    .main-section {
+        flex-wrap: wrap;
+        
+    }
+
+    .center {
+        order: -1;
+        width: 100%;
+        height: 40vh;
+    }
+
+    .left, .right {
+        width: 50%;
+        height: 40vh;
+    }
+
+    .title {
+        margin-top: 2rem;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 1000px) {
+    .main-section {
+        flex-wrap: wrap;
+    }
+
+    .center {
+        order: -1;
+        width: 100%;
+        height: 40vh;
+    }
+
+    .left, .right {
+        width: 50%;
+        height: 40vh;
+    }
+
+    .title {
+        margin-top: 2rem;
+    }
+}
+
+@media (min-width: 1px) and (max-width: 500px) {
+    .main-section {
+        flex-direction: column;
+    }
+
+    header {
+        height: 20vh;
+    }
+
+    .center {
+        order: -1;
+        width: 100%;;
+        height: 20vh;
+    }
+
+    .left, .right {
+        width: 100%;;
+        height: 20vh;
+        flex-direction: row;
+    }
+
+    .site-footer {
+        width: 100%;;
+        height: 20vh;
+    }
+
+    .title {
+        margin-top: 2rem;
+    }
+}
